@@ -1,44 +1,42 @@
-# Домашнее задание к занятию "`«Система мониторинга Prometheus»`" - `Филон Андрей`
+# Домашнее задание к занятию "`«Prometheus. Часть 2»`" - `Филон Андрей`
 
 ---
 
 ### Задание 1
 
-`Установите Prometheus.`
-
+`Создайте файл с правилом оповещения, как в лекции, и добавьте его в конфиг Prometheus.`
 `Требования к результату`
 
-    Прикрепите к файлу README.md скриншот systemctl status prometheus, где будет написано: prometheus.service — Prometheus Service Netology Lesson 9.4 — [Ваши ФИО]
+    Погасите node exporter, стоящий на мониторинге, и прикрепите скриншот раздела оповещений Prometheus, где оповещение будет в статусе Pending
 
 ### Ответ:  
 
-![Задание 1](https://github.com/AndreyFilon/zabbix-path3/blob/main/1.jpg)
+![Задание 1](https://github.com/AndreyFilon/prometheus-path5/blob/main/1.jpg)
 
 ---
 
 ### Задание 2
 
-`Установите Node Exporter.`
-
+`Установите Alertmanager и интегрируйте его с Prometheus.`
 `Требования к результату`
 
-    Прикрепите к файлу README.md скриншот systemctl status node-exporter, где будет написано: node-exporter.service — Node Exporter Netology Lesson 9.4 — [Ваши ФИО]
-
-![Задание 2](https://github.com/AndreyFilon/zabbix-path3/blob/main/2.jpg)
-
-### Задание 3
-
-`Подключите Node Exporter к серверу Prometheus.`
-
-`Требования к результату`
-
-    Прикрепите к файлу README.md скриншот конфигурации из интерфейса Prometheus вкладки Status > Configuration
-    Прикрепите к файлу README.md скриншот из интерфейса Prometheus вкладки Status > Targets, чтобы было видно минимум два эндпоинта
+    Прикрепите скриншот Alerts из Prometheus, где правило оповещения будет в статусе Fireing, и скриншот из Alertmanager, где будет видно действующее правило оповещения
 
 ### Ответ:
 
-![Задание 3](https://github.com/AndreyFilon/zabbix-path3/blob/main/3.1.jpg)
-![Задание 3](https://github.com/AndreyFilon/zabbix-path3/blob/main/3.2.jpg)
+![Задание 2](https://github.com/AndreyFilon/prometheus-path5/blob/main/2.1.jpg)
+![Задание 2](https://github.com/AndreyFilon/prometheus-path5/blob/main/2.2.jpg)
 
 ---
 
+### Задание 3
+
+`Активируйте экспортёр метрик в Docker и подключите его к Prometheus.`
+`Требования к результату`
+
+    приложите скриншот браузера с открытым эндпоинтом, а также скриншот списка таргетов из интерфейса Prometheus.*
+
+### Ответ:
+
+![Задание 3](https://github.com/AndreyFilon/prometheus-path5/blob/main/3.1.jpg)
+![Задание 3](https://github.com/AndreyFilon/prometheus-path5/blob/main/3.2.jpg)
